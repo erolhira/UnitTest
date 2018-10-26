@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+the unit tests just ignore the settings in the application.properties,
+so logback-test.xml can be used to set the logging levels.
+ -->
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/base.xml" />
+	<logger name="org.springframework" level="ERROR"/>
+    <logger name="com.workshop" level="ERROR"/>
+</configuration>
